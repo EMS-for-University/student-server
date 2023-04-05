@@ -16,7 +16,7 @@ public class SwaggerConfiguration {
     public Docket productApi() {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.tanvirsojal.studentserver.controller"))
+                .apis(RequestHandlerSelectors.basePackage("com.emsforuniversity.studentserver.controller"))
                 .paths(regex("/api.*"))
                 .build();
     }
